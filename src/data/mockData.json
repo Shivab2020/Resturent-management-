@@ -1,0 +1,90 @@
+{
+  "stats": {
+    "totalOrders": 42,
+    "revenue": 23850,
+    "expenses": 11200,
+    "profit": 12650
+  },
+  "salesData": [
+    { "name": "10 AM", "sales": 1200 },
+    { "name": "12 PM", "sales": 2150 },
+    { "name": "2 PM", "sales": 1800 },
+    { "name": "4 PM", "sales": 2400 },
+    { "name": "6 PM", "sales": 3100 },
+    { "name": "8 PM", "sales": 4200 }
+  ],
+  "profitTrend": [
+    { "day": "Mon", "profit": 2000 },
+    { "day": "Tue", "profit": 1850 },
+    { "day": "Wed", "profit": 2200 },
+    { "day": "Thu", "profit": 2050 },
+    { "day": "Fri", "profit": 2600 },
+    { "day": "Sat", "profit": 3100 },
+    { "day": "Sun", "profit": 2800 }
+  ],
+  "bestSelling": { "name": "Paneer Butter Masala", "count": 28 },
+  "orders": [
+    {
+      "id": 101,
+      "table": 3,
+      "items": [
+        { "name": "Paneer Butter Masala", "qty": 2, "price": 250 },
+        { "name": "Butter Naan", "qty": 4, "price": 40 }
+      ],
+      "status": "Cooking",
+      "billTotal": 660
+    },
+    {
+      "id": 102,
+      "table": 1,
+      "items": [
+        { "name": "Masala Dosa", "qty": 3, "price": 120 },
+        { "name": "Filter Coffee", "qty": 3, "price": 35 }
+      ],
+      "status": "Pending",
+      "billTotal": 465
+    },
+    {
+      "id": 103,
+      "table": 6,
+      "items": [
+        { "name": "Chicken Biryani", "qty": 2, "price": 280 },
+        { "name": "Lassi", "qty": 2, "price": 60 }
+      ],
+      "status": "Ready",
+      "billTotal": 680
+    }
+  ],
+  "menu": [
+    { "id": 1, "name": "Paneer Butter Masala", "category": "Main Course", "price": 250, "available": true },
+    { "id": 2, "name": "Masala Dosa", "category": "South Indian", "price": 120, "available": true },
+    { "id": 3, "name": "Chicken Biryani", "category": "Rice", "price": 280, "available": true },
+    { "id": 4, "name": "Butter Naan", "category": "Bread", "price": 40, "available": true },
+    { "id": 5, "name": "Filter Coffee", "category": "Beverage", "price": 35, "available": true },
+    { "id": 6, "name": "Lassi", "category": "Beverage", "price": 60, "available": false }
+  ],
+  "inventory": [
+    { "name": "Paneer", "qty": 3, "status": "Low" },
+    { "name": "Tomatoes", "qty": 25, "status": "OK" },
+    { "name": "Curd", "qty": 0, "status": "Expired" },
+    { "name": "Chicken", "qty": 8, "status": "OK" }
+  ],
+  "feedback": [
+    { "customer": "Ravi", "comment": "Loved the Paneer!", "sentiment": "positive" },
+    { "customer": "Neha", "comment": "Service was a bit slow.", "sentiment": "neutral" },
+    { "customer": "Imran", "comment": "Chicken biryani was cold.", "sentiment": "negative" }
+  ],
+  "staff": [
+    { "name": "Sita", "role": "Chef", "hours": 8, "present": true },
+    { "name": "Ramesh", "role": "Waiter", "hours": 10, "present": false },
+    { "name": "Anita", "role": "Manager", "hours": 9, "present": true }
+  ],
+  "customers": [
+    { "name": "Alok", "visits": 14, "points": 230, "favorite": "Masala Dosa" },
+    { "name": "Bhavna", "visits": 21, "points": 380, "favorite": "Paneer Butter Masala" },
+    { "name": "Tarun", "visits": 7, "points": 120, "favorite": "Chicken Biryani" }
+  ],
+  "reservations": [
+    { "name": "Kiran", "phone": "9876543210", "type": "Dine-in", "time": "7:30 PM" }
+  ]
+}

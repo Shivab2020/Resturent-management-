@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #FFA500;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 font-sans dark:bg-gray-900 dark:text-gray-100;
+}
+
+.card {
+  @apply bg-white dark:bg-gray-800 rounded-xl shadow-card border border-gray-200 dark:border-gray-700;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 px-3 py-2 rounded-md font-medium transition-colors;
+}
+.btn-lg { @apply px-4 py-3 text-base; }
+.btn-pill { @apply rounded-full; }
+.btn-sm { @apply px-2 py-1 text-sm; }
+.btn-primary {
+  @apply bg-brand-500 text-white hover:bg-brand-600;
+}
+.btn-outline {
+  @apply border border-gray-300 text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-200 dark:hover:bg-gray-800;
+}
+.btn-ghost {
+  @apply text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800;
+}
+
+.badge {
+  @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border;
+}
+.badge-green { @apply bg-green-50 text-green-700 border-green-200; }
+.badge-red { @apply bg-red-50 text-red-700 border-red-200; }
+.badge-yellow { @apply bg-yellow-50 text-yellow-700 border-yellow-200; }
+.badge-gray { @apply bg-gray-100 text-gray-700 border-gray-200; }
+
+/* Dark mode tweaks for common text shades used across pages */
+.dark .text-gray-600 { @apply text-gray-300; }
+.dark .text-gray-700 { @apply text-gray-200; }
+.dark thead.bg-gray-100 { @apply bg-gray-800; }
+.dark tbody tr.border-t { @apply border-gray-700; }
+
+/* Mobile scaling for ~440px width screens */
+@media (max-width: 480px) {
+  html { font-size: 15px; }
+  .card { @apply p-3 rounded-lg; }
+  .btn { @apply px-2 py-1 text-sm; }
+  table th, table td { @apply p-2; }
+}
